@@ -18,5 +18,8 @@ II. Instructions to run analysis codes
 
     The user may first run the simulations using the codes given in the simulations directory. The simulation files generates files which list the positions of all components corresponding to each        MCS. The positions are printed in files named as 'store_MCS-step'.For instance, the positions of all the components in iteration index-10000 will be listed in the file: store_10000.
 
+    Each of the 'store_MCS-step' file has the format: Label, X-coordinate, Y-coordinate, Z-coordinate. The label `O' denotes the coordinates of a monomer of the chromosome-polymer. 
+    The label `Na' denotes the coordinate of a free Nus protein. The label `N' denotes the coordinate of a bound Nus protein.
+
     
     
