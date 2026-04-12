@@ -5,13 +5,13 @@ I. Overview of directory contents
    b. simulations: This contains the primary fortran codes to run simulations for various scenarios.
 
 2. The simulations directory contains four subdirectories
-   a.  system: This contains the codes to run MC simulations with all the components - RNAPs, free and bound Nus, and the chromosome-polymer. 
+   a.  system: This contains the code to run MC simulations with all the components - RNAPs, free and bound Nus, and the chromosome-polymer. 
    b.  phase_diag: This contains the codes to run MC simulations with only the free Nus proteins in absence of chromosome and RNAPs.
    c.  model_modification: This contains codes to run MC simulations with all components with one modification -Temporal fluctuations to the attractive interaction.
    d.  diff_constant_and_res_times: This contains codes to run MC simulations with all components with data printed more frequently so that the diffusion constants
        of Nus in the two phases may be calculated and the residence time in the dense phase may be calculated.
 
-3.  The miscelleneous_analysis_codes contains all the analysis codes for all the analysis presented in the paper.
+3.  The miscelleneous_analysis_codes contains all the analysis codes for most of the analysis presented in the paper.
 
 
 II. Instructions to run analysis codes
@@ -35,10 +35,10 @@ III. Overview of Analysis Codes
 
 IV.  Additional Comments
 
-      - To replicate the analysis presented In Fig.5a and 5b, the user must go to simulations/diff_constant_and res_times. First the main simulation code `llps_mc.f90' must be run. Thereafter, the            code: `residence_time_approach.f90' must be run to conduct the analysis presented in Fig.6a. To replicate the analysis presented in Fig.6b, run the codes `diff_const_dilute2.f90' and     'diff_constant_dense2.f90'. 
+      - To replicate the analysis presented In Fig.5a and 5b, the user must go to simulations/diff_constant_and res_times. First the main simulation code `main_simulation_code/llps_mc.f90' must be run. Thereafter, the code: `residence_time_analysis/residence_time_approach.f90' must be run to conduct the analysis presented in Fig.6a. To replicate the analysis presented in Fig.6b, run the codes `Diffusion_constant_analysis/diff_const_dilute2.f90' and  'Diffusion_constant_analysis/diff_constant_dense2.f90'. 
 
       - To replicate the analysis presented In Fig.7, the user must first run simulations by running the code simulations/model_modification/main_simulation/llps_mc.f90.
-      - To conduct the analysis presented in Fig.7, the user must run the analysis codes in  simulations/model_modification/analysis_codes.
+      - To conduct the analysis presented in Fig.7, the user must run the analysis codes in  simulations/model_modification/analysis_code.
 
       
 
